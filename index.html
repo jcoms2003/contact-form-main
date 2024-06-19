@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- stylesheet css link -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- scripts -->
+    <script src="scripts.js"></script>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Karla" />
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <main>
+      <form name="contact-form">
+        <div class="main-container">
+          <h2 id="H2">Contact Us</h2>
+          <div class="name-container">
+            <div class="fname-container">
+              <label for="fname" class="fname-label">First Name *</label>
+              <input type="text" name="fname" id="fname" />
+            </div>
+            <div class="lname-container">
+              <label for="lname" class="lname-label">Last Name *</label>
+              <input type="text" name="lname" id="lname" />
+            </div>
+          </div>
+          <div class="email-container">
+            <label for="email" class="email-label">Email Address *</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="query">
+            <label for="query">Query Type *</label>
+          </div>
+          <div class="query-container">
+            <div class="general" id="colorOne">
+              <input
+                type="radio"
+                name="queryQ"
+                id="general"
+                onclick="changeBg('colorOne')"
+              />
+
+              <label class="general-label" for="general">General Query</label>
+            </div>
+
+            <div class="support" id="colorTwo">
+              <input
+                type="radio"
+                name="queryQ"
+                id="support"
+                onclick="changebG('colorTwo')"
+              />
+              <label class="support-label" for="support">Support Request</label>
+            </div>
+          </div>
+          <div class="text-box">
+            <label for="message" class="message-label">Message *</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <div class="check">
+            <input type="checkbox" name="terms" id="terms" />
+            <label for="terms" class="term-label"
+              >I consent to being contacted by the team *</label
+            >
+          </div>
+          <div class="submit-button">
+            <input class="button" type="submit" value="Submit" />
+          </div>
+        </div>
+      </form>
+    </main>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>

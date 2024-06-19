@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="practice.js"></script>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="practice.css.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form onSubmit="onSubmit()">
+      <input
+        type="text"
+        placeholder="username"
+        oninvalid="InvalidMsg(event)"
+        oninput="InvalidMsg(event)"
+        required
+      />
+      <div>
+        <input
+          type="paswword"
+          placeholder="password"
+          oninvalid="InvalidMsg(event)"
+          oninput="InvalidMsg(event)"
+          pattern="[0-9]{5}"
+          required
+        />
+        <small>The password format is 5 digits length</small>
+      </div>
+      <button type="submit">valider</button>
+    </form>
+  </body>
+</html>

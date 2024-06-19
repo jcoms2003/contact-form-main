@@ -1,0 +1,169 @@
+/* Universal Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Body Styles */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(148, 38%, 91%);
+  font-family: "Karla", sans-serif;
+}
+/* Main form container -- Centered on page */
+.main-container {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  border-radius: 10px;
+}
+/* First heading */
+#H2 {
+  font-weight: 700;
+  margin: 25px 0 20px 20px;
+}
+/* class for flex: row */
+.email-container,
+.query-container,
+.name-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+/* class for flex: col */
+.email-container,
+.query,
+.text-box,
+.submit-button {
+  display: flex;
+  flex-direction: column;
+}
+/* query boxes */
+.general,
+.support {
+  display: flex;
+  padding: 5px 10px;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 5px;
+  width: 50%;
+  height: 35px;
+  align-items: center;
+  color: hsl(187, 24%, 22%);
+}
+.check,
+input[type="checkbox"] {
+  display: flex;
+  justify-self: center;
+}
+/* name containers 50% */
+.fname-container,
+.lname-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+/* Styles for the inputs directly */
+/**/
+/* Name styles first box */
+#fname {
+  margin: 10px 0 15px 20px;
+}
+#lname {
+  margin: 10px 20px 15px 10px;
+}
+.fname-label {
+  margin: 0 0 0 20px;
+  color: hsl(187, 24%, 22%);
+}
+.lname-label {
+  margin: 0 0 0 10px;
+  color: hsl(187, 24%, 22%);
+}
+/* input and label font / border / height */
+input {
+  height: 35px;
+  border-radius: 5px;
+  border: solid 1px hsl(186, 15%, 59%);
+  padding-left: 10px;
+}
+label {
+  font-size: 14px;
+}
+
+/* email box styles */
+.email-label {
+  margin: 5px 0 0 20px;
+  color: hsl(187, 24%, 22%);
+}
+#email {
+  margin: 10px 20px 0 20px;
+}
+/* Query styles (general and support) */
+.query {
+  margin: 15px 0 15px 20px;
+  color: hsl(187, 24%, 22%);
+}
+.general {
+  margin: 0 10px 15px 20px;
+}
+.support {
+  margin: 0 20px 0 0;
+}
+.general-label,
+.support-label {
+  font-size: 14px;
+  margin-left: 10px;
+}
+#general,
+#support {
+  margin-left: 5px;
+  accent-color: hsl(169, 82%, 27%);
+}
+
+/* message (textbox area) styes */
+#message {
+  margin: 10px 20px 0 20px;
+  height: 68px;
+}
+.message-label {
+  margin: 0 0 0 20px;
+  color: hsl(187, 24%, 22%);
+}
+textarea {
+  border-radius: 5px;
+  border: solid 1px hsl(186, 15%, 59%);
+  padding: 10px;
+  resize: none;
+}
+/* terms check box styles */
+#terms {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.term-label {
+  margin-left: 15px;
+  margin-top: 20px;
+  color: hsl(187, 24%, 22%);
+}
+.check {
+  align-items: center;
+  accent-color: hsl(169, 82%, 27%);
+}
+/* submit button styles */
+.button {
+  margin: 10px 20px 30px 20px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(169, 82%, 27%);
+}
+/* focus and active states */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border: 1px solid rgb(12, 125, 105);
+  outline: none;
+  box-shadow: 0px 0px 2px rgba(12, 125, 105, 0.75) !important;
+}

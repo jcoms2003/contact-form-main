@@ -1,0 +1,15 @@
+input {
+  outline: none;
+  border: solid 1px gray;
+}
+.error {
+  border-left: solid 3px red;
+}
+.success {
+  border-left: solid 3px green;
+}
+form:invalid button[type="submit"],
+form:invalid input[type="submit"] {
+  opacity: 0.5;
+  cursor: default;
+}
